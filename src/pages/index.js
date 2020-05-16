@@ -13,6 +13,7 @@ import About from "../components/About"
 import Features from "../components/Features"
 import Courses from "../components/Courses"
 import Offer from "../components/Offer"
+import Contact from "../components/Contact"
 
 const IndexPage = () => (
   <Layout>
@@ -24,6 +25,7 @@ const IndexPage = () => (
     <Features />
     <Courses />
     <Offer />
+    <Contact />
   </Layout>
 )
 
