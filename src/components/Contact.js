@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react"
 
 export default function Contact() {
-    return (
-       <section>
-           
-       </section>
-    )
+  return (
+    <section id="contact">
+      <div className="container contact-row">
+        <div className="contact-left"></div>
+        <div className="contact-right">
+          <img src="Images/contact.png" alt="contact" />
+        </div>
+      </div>
+    </section>
+  )
 }
