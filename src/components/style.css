@@ -190,13 +190,16 @@ nav li a {
 
 /* courses */
 #courses {
-  padding: 100px 0;
+  padding: 0 100px;
+  height: 100vh;
 }
 
 .course-row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  background-color: aqua;
+  height: 100%;
 }
 
 .course-right,

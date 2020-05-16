@@ -11,6 +11,7 @@ import Header from "../components/header"
 import Sidebar from "../components/Sidebar"
 import About from "../components/About"
 import Features from "../components/Features"
+import Courses from "../components/Courses"
 
 const IndexPage = () => (
   <Layout>
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <Sidebar />
     <About />
     <Features />
+    <Courses />
   </Layout>
 )
 
