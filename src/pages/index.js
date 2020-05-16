@@ -9,6 +9,8 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Header from "../components/header"
 import Sidebar from "../components/Sidebar"
+import About from "../components/About"
+import Features from "../components/Features"
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +18,8 @@ const IndexPage = () => (
     <Header />
     <Main />
     <Sidebar />
+    <About />
+    <Features />
   </Layout>
 )
 
