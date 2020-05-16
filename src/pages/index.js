@@ -12,6 +12,7 @@ import Sidebar from "../components/Sidebar"
 import About from "../components/About"
 import Features from "../components/Features"
 import Courses from "../components/Courses"
+import Offer from "../components/Offer"
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +23,7 @@ const IndexPage = () => (
     <About />
     <Features />
     <Courses />
+    <Offer />
   </Layout>
 )
 

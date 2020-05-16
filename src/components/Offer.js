@@ -2,13 +2,15 @@ import React from "react"
 
 export default function About() {
   return (
-    <section id="about">
+    <section id="offer">
       <div className="about-left">
-        <img src="Images/about.png" alt="about" />
+        <img src="Images/offer.png" alt="about" />
       </div>
       <div className="about-right">
         <div className="about-text">
-          <h2>About Us</h2>
+          <h2>
+            Limitless Learning <br /> Limitless Possibilities
+          </h2>
           <span className="square"></span>
 
           <p>
@@ -23,8 +25,8 @@ export default function About() {
             years, sometimes by accident, sometimes on purpose (injected humour
             and the like).
           </p>
-          <br />
-          <br />
+
+          <button className="common-btn">Start Free Trial</button>
 
           <div className="line">
             <span className="line-1"></span>
@@ -34,11 +36,6 @@ export default function About() {
 
             <span className="line-3"></span>
           </div>
-          <h3>
-            Learning is not attained by chance, it must be sought with ardor and
-            attended to with diligence
-          </h3>
-          <h4>---- Abigail Adams</h4>
         </div>
       </div>
     </section>
