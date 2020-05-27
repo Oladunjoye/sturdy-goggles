@@ -1,10 +1,11 @@
 import React from "react"
+import offer from "../images/offer.png"
 
 export default function About() {
   return (
     <section id="offer">
       <div className="about-left">
-        <img src="Images/offer.png" alt="about" />
+        <img src={offer} alt="about" />
       </div>
       <div className="about-right">
         <div className="about-text">

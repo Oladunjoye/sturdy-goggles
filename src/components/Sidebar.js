@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import Hamburger from "./Hamburger"
+// import Hamburger from "./Hamburger"
+import menu from "../images/menu.png"
 
 export default function Sidebar() {
   const handleClick = () => {
-    let menuBtn = document.getElementById("menuBtn")
+    // let menuBtn = document.getElementById("menuBtn")
     let sideNav = document.getElementById("sideNav")
 
     // sideNav.style.right = "-250px"
@@ -40,12 +41,7 @@ export default function Sidebar() {
           </li>
         </ul>
       </nav>
-      <img
-        onClick={handleClick}
-        alt="hamburger"
-        id="menuBtn"
-        src="Images/menu.png"
-      />
+      <img onClick={handleClick} alt="hamburger" id="menuBtn" src={menu} />
     </>
   )
 }

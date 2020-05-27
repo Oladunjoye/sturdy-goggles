@@ -1,4 +1,5 @@
 import React from "react"
+import contact from "../images/contact.png"
 
 export default function Contact() {
   return (
@@ -27,7 +28,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="contact-right">
-          <img src="Images/contact.png" alt="contact" />
+          <img src={contact} alt="contact" />
         </div>
       </div>
     </section>
