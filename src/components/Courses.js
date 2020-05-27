@@ -8,7 +8,7 @@ export default function Courses() {
         <div className="course-left">
           <div className="course-text">
             <h2>
-              Browse our Top <br /> Courses
+              Browse our Top <br /> Haha Courses
             </h2>
             <span className="square"></span>
 
