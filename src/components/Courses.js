@@ -1,4 +1,5 @@
 import React from "react"
+import course from "../images/course.png"
 
 export default function Courses() {
   return (
@@ -32,7 +33,7 @@ export default function Courses() {
           </div>
         </div>
         <div className="course-right">
-          <img src="Images/course.png" />
+          <img src={course} alt="course" />
         </div>
       </div>
     </section>
