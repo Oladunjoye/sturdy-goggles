@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
 
 .main {
@@ -10,7 +12,8 @@
   background-size: cover;
 }
 
-.content-container {
+.content-container,
+.container {
   margin: 0 100px;
 }
 
@@ -112,11 +115,13 @@ nav li a {
 
 /* about section */
 #about,
-#offer {
+#offer,
+#contact {
   padding: 100px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .about-left,
@@ -164,6 +169,7 @@ nav li a {
 
 .feature-col {
   flex-basis: 25%;
+  text-align: center;
 }
 
 .feature-col img {
@@ -191,7 +197,7 @@ nav li a {
 
 /* courses */
 #courses {
-  padding: 0 100px;
+  /* padding: 0 100px; */
   height: 100vh;
 }
 
@@ -240,4 +246,203 @@ nav li a {
 
 .contact-right img {
   width: 100%;
+}
+
+form {
+  max-width: 350px;
+  margin: 30px 0;
+}
+
+form input {
+  padding: 12px 10px;
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #fab3c4;
+}
+
+.btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-box button {
+  flex-basis: 48%;
+  padding: 18px 0;
+}
+
+/* footer */
+#footer {
+  padding: 50px 0px 30px;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #f67c92;
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex-basis: 50%;
+  margin-top: 60px;
+}
+
+.footer-right {
+  flex-basis: 35%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.link-title h4 {
+  color: #fab3c4;
+  margin-bottom: 20px;
+}
+
+small {
+  display: block;
+}
+.link-title small {
+  font-size: 13px;
+  color: #777;
+  display: block;
+}
+
+.footer-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-logo button {
+  padding: 12px 38px;
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+.copyright-text,
+.footer-logo {
+  flex-basis: 40%;
+}
+
+/* icons */
+.social-icons {
+  width: 50px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.social-icons img {
+  display: block;
+  width: 20px;
+  margin: 0 auto 20px;
+  cursor: pointer;
+}
+
+/* /media query/ */
+
+@media (max-width: 767px) {
+  .main {
+    background-image: none;
+  }
+
+  .content-container,
+  .container {
+    margin: 0 50px;
+  }
+
+  .logo {
+    margin-top: 27px;
+    width: 70px;
+  }
+
+  .content-text {
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  #menuBtn {
+    position: fixed;
+    width: 40px;
+    right: 30px;
+  }
+
+  .common-btn {
+    padding: 10px 16px;
+  }
+
+  .social-icons img {
+    width: 14px;
+    margin: 15px auto;
+  }
+
+  .about-left,
+  .about-right {
+    flex-basis: 100%;
+  }
+
+  .about-text {
+    margin: 50px 50px 0;
+    display: inline-block;
+    text-align: justify;
+  }
+  .about-text h3 {
+    font-size: 18px;
+  }
+
+  .feature-col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .course-left,
+  .course-right {
+    flex-basis: 100%;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .contact-right {
+    margin-bottom: 50px;
+    order: 1;
+  }
+  .contact-left {
+    order: 2;
+  }
+
+  .footer-left,
+  .footer-right {
+    flex-basis: 100%;
+  }
+  .link-title {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+  }
 }

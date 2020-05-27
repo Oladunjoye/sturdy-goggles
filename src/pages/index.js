@@ -1,11 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Main from "../components/Main"
 // import "../components/style.css"
 
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 import Header from "../components/header"
 import Sidebar from "../components/Sidebar"
@@ -14,6 +14,8 @@ import Features from "../components/Features"
 import Courses from "../components/Courses"
 import Offer from "../components/Offer"
 import Contact from "../components/Contact"
+import Footer from "../components/Footer"
+import Icons from "../components/Icons"
 
 const IndexPage = () => (
   <Layout>
@@ -21,11 +23,13 @@ const IndexPage = () => (
     <Header />
     <Main />
     <Sidebar />
+    <Icons />
     <About />
     <Features />
     <Courses />
     <Offer />
     <Contact />
+    <Footer />
   </Layout>
 )
 
